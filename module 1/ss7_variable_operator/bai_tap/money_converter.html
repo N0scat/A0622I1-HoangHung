@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<form>
+    <table>
+        <tr style="vertical-align: center; text-align: center">
+            <th>Amount</th>
+            <th style="padding-left: 30px">From currency</th>
+            <th style="padding-left: 30px">To currency</th>
+        </tr>
+        <tr style="vertical-align: center; text-align: center">
+            <td><input type="text" name="amount" id="VND"></td>
+            <td style="padding-left: 30px">
+                <select name="iCurrency" id="iCurrency">
+                    <option>VND</option>
+                </select>
+            </td>
+            <td style="padding-left: 30px">
+                <select name="fCurrency">
+                    <option>USD</option>
+                </select>
+            </td>
+            <td style="padding-left: 30px"><button type="button" onclick="myFunction()">convert</button></td>
+
+            <script>
+                function myFunction() {
+                    let ic = document.getElementById("VND").value;
+                    parseInt(ic);
+                    let USD = ic * 0.000043;
+                    document.getElementById('result').innerHTML= "result: " + USD;
+                }
+            </script>
+        </tr>
+    </table>
+</form>
+<p id="result">result:</p>
+</body>
+</html>

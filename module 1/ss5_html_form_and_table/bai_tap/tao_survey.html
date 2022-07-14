@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>Market Research Survey</h1>
+<h4 style="color:darkgray">Please take a few moments to complete this satisfaction survey.</h4>
+<hr>
+<fieldset id="age" onclick="changecolora()" style="border:0px">
+    <h2>What is your age range?</h2>
+    <select style="width: 75%">
+        <option>18-24</option>
+        <option>25-34</option>
+        <option>35-50</option>
+        <option>50+</option>
+    </select>
+</fieldset>
+
+<fieldset id="salary" onclick="changecolors()" style="border:0px">
+    <h2>What is your yearly income range?</h2>
+    <select style="width: 75%">
+        <option>$0-$25000</option>
+        <option>$25001-$100000</option>
+        <option>$50001-$100000</option>
+        <option>$100000+</option>
+    </select>
+</fieldset>
+
+<fieldset id="gender" onclick="changecolorg()" style="border:0px">
+    <h2>What is your age range?</h2>
+    <input type="radio">Male<br>
+    <input type="radio">Female<br>
+    <input type="radio">Nonbinary<br>
+    <input type="radio">Other<br>
+    <input type="text" style="width:5%;">
+</fieldset>
+
+<fieldset id="product" onclick="changecolorp()" style="border:0px">
+    <h2>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h2>
+    <input type="checkbox">Product 1<br>
+    <input type="checkbox">Product 2<br>
+    <input type="checkbox">Product 3<br>
+
+    </input>
+</fieldset>
+
+<fieldset id="often" onclick="changecoloro()" style="border:0px">
+    <h2>What is your age range?</h2>
+    <input type="radio">Daily<br>
+    <input type="radio">Weekly<br>
+    <input type="radio">Monthly<br>
+</fieldset>
+
+<fieldset id="price" onclick="changecolorpr()" style="border:0px">
+    <h2>What would you pay for the new product?</h2>
+    <table >
+        <tr>
+            <td>$</td>
+            <td><input type="text"</td>
+            <td>-</td>
+            <td><input style="width: 25%" type="text"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="text-align: center">dollars</td>
+            <td></td>
+            <td>cents</td>
+        </tr>
+    </table>
+</fieldset>
+
+</body>
+</html>
+<script>
+    function changecolora() {
+    document.getElementById("age").style.backgroundColor = 'yellow'
+    document.getElementById("salary").style.backgroundColor = 'white'
+    document.getElementById("gender").style.backgroundColor = 'white'
+    document.getElementById("product").style.backgroundColor = 'white'
+    document.getElementById("often").style.backgroundColor = 'white'
+    document.getElementById("price").style.backgroundColor = 'white'
+    }
+</script>
+<script>
+    function changecolors() {
+    document.getElementById("age").style.backgroundColor = 'white'
+    document.getElementById("salary").style.backgroundColor = 'yellow'
+    document.getElementById("gender").style.backgroundColor = 'white'
+    document.getElementById("product").style.backgroundColor = 'white'
+    document.getElementById("often").style.backgroundColor = 'white'
+    document.getElementById("price").style.backgroundColor = 'white'
+    }
+</script>
+<script>
+    function changecolorg() {
+    document.getElementById("age").style.backgroundColor = 'white'
+    document.getElementById("salary").style.backgroundColor = 'white'
+    document.getElementById("gender").style.backgroundColor = 'yellow'
+    document.getElementById("product").style.backgroundColor = 'white'
+    document.getElementById("often").style.backgroundColor = 'white'
+    document.getElementById("price").style.backgroundColor = 'white'
+    }
+</script>
+<script>
+    function changecolorp() {
+    document.getElementById("age").style.backgroundColor = 'white'
+    document.getElementById("salary").style.backgroundColor = 'white'
+    document.getElementById("gender").style.backgroundColor = 'white'
+    document.getElementById("product").style.backgroundColor = 'yellow'
+    document.getElementById("often").style.backgroundColor = 'white'
+    document.getElementById("price").style.backgroundColor = 'white'
+    }
+</script>
+<script>
+    function changecoloro() {
+    document.getElementById("age").style.backgroundColor = 'white'
+    document.getElementById("salary").style.backgroundColor = 'white'
+    document.getElementById("gender").style.backgroundColor = 'white'
+    document.getElementById("product").style.backgroundColor = 'white'
+    document.getElementById("often").style.backgroundColor = 'yellow'
+    document.getElementById("price").style.backgroundColor = 'white'
+    }
+</script>
+<script>
+    function changecolorpr() {
+    document.getElementById("age").style.backgroundColor = 'white'
+    document.getElementById("salary").style.backgroundColor = 'white'
+    document.getElementById("gender").style.backgroundColor = 'white'
+    document.getElementById("product").style.backgroundColor = 'white'
+    document.getElementById("often").style.backgroundColor = 'white'
+    document.getElementById("price").style.backgroundColor = 'yellow'
+    }
+</script>
