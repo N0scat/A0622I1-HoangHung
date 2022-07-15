@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table>
+    <tr>
+       <td><input type="text" id="IV1"></td>
+        <td><input type="text" id="IV2"></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td><button type="button" id="add" onclick="add()">Addition (+)</button></td>
+        <td><button type="button" id="minus" onclick="minus()">Subtraction (-)</button> </td>
+        <td><button type="button" id="time" onclick="time()">Multiplication (x)</button> </td>
+        <td><button type="button" id="divide" onclick="divide()">Division (/)</button> </td>
+    </tr>
+</table>
+<label id="result">result</label>
+<script>
+    function add() {
+        let inumb = document.getElementById("IV1").value;
+        let fnumb = document.getElementById("IV2").value;
+        let ans = parseInt(inumb)+parseInt(fnumb);
+        document.getElementById("result").innerHTML= "result is: " + ans;
+    }
+</script>
+
+<script>
+    function minus() {
+        let inumb = document.getElementById("IV1").value;
+        let fnumb = document.getElementById("IV2").value;
+        let ans = parseInt(inumb)-parseInt(fnumb);
+        document.getElementById("result").innerHTML= "result is: " + ans;
+    }
+</script>
+
+<script>
+    function time() {
+        let inumb = document.getElementById("IV1").value;
+        let fnumb = document.getElementById("IV2").value;
+        let ans = parseInt(inumb)*parseInt(fnumb);
+        document.getElementById("result").innerHTML= "result is: " + ans;
+    }
+</script>
+
+<script>
+    function divide() {
+        let inumb = document.getElementById("IV1").value;
+        let fnumb = document.getElementById("IV2").value;
+        let ans = parseInt(inumb)/parseInt(fnumb);
+        document.getElementById("result").innerHTML= "result is: " + ans;
+    }
+</script>
+</body>
+</html>
