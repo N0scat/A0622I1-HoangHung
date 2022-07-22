@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table>
+    <tr style="width: 300px">
+        <th><input type="text" id="val"></th>
+    </tr>
+</table>
+
+
+        <button onclick="addNumb1()" style="width: 100px; height: 75px">1</button>
+        <button onclick="addNumb2()" style="width: 100px; height: 75px">2</button>
+        <button onclick="addNumb3()" style="width: 100px; height: 75px">3</button>
+        <button onclick="add()" style="width: 100px; height: 75px">+</button>
+    <br>
+        <button onclick="addNumb4()" style="width: 100px; height: 75px">4</button>
+        <button onclick="addNumb5()" style="width: 100px; height: 75px">5</button>
+        <button onclick="addNumb6()" style="width: 100px; height: 75px">6</button>
+        <button onclick="minus()" style="width: 100px; height: 75px">-</button>
+    <br>
+        <button onclick="addNumb7()" style="width: 100px; height: 75px">7</button>
+        <button onclick="addNumb8()" style="width: 100px; height: 75px">8</button>
+        <button onclick="addNumb9()" style="width: 100px; height: 75px">9</button>
+        <button onclick="time()" style="width: 100px; height: 75px">*</button>
+    <br>
+        <button onclick="clear1()" style="width: 100px; height: 75px">c</button>
+        <button onclick="addNumb0()" style="width: 100px; height: 75px">0</button>
+        <button onclick="equal()" style="width: 100px; height: 75px">=</button>
+        <button onclick="divide()" style="width: 100px; height: 75px">/</button>
+    <br>
+
+
+<script>
+    var disp =''
+    function addNumb1() {
+        document.getElementById('val').value +=1
+    }
+
+    function addNumb2() {
+        document.getElementById('val').value +=2
+    }
+
+    function addNumb3() {
+        document.getElementById('val').value +=3
+    }
+
+    function addNumb4() {
+        document.getElementById('val').value +=4
+    }
+
+    function addNumb5() {
+        document.getElementById('val').value +=5
+    }
+
+    function addNumb6() {
+        document.getElementById('val').value +=6
+    }
+
+    function addNumb7() {
+        document.getElementById('val').value +=7
+    }
+
+    function addNumb8() {
+        document.getElementById('val').value +=8
+    }
+
+    function addNumb9() {
+        document.getElementById('val').value +=9
+    }
+
+    function addNumb0() {
+        document.getElementById('val').value +=0
+    }
+
+    function add() {
+        document.getElementById('val').value += ' + '
+    }
+    function minus() {
+        document.getElementById('val').value += ' - '
+    }
+    function time() {
+        document.getElementById('val').value += ' * '
+    }
+    function divide() {
+        document.getElementById('val').value += ' / '
+    }
+    function clear1() {
+        document.getElementById('val').value = ''
+    }
+    function equal() {
+        let numb = document.getElementById('val').value
+        let num = eval (numb)
+        document.getElementById('val').value = num
+    }
+</script>
+</body>
+</html>
