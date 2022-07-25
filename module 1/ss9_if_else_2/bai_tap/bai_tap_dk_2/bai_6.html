@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m = parseInt(prompt('enter slope'))
+    let b = parseInt(prompt('enter constant'))
+   if (m>0||m<0){
+       alert('x is equal to ' + ((-b)/m))
+   }else if (m==0) {
+       if (b != 0) {
+           alert('there is no x value to satisfied the equation')
+       }else{
+           alert('there is infinite x that satisfied the equation')
+       }
+   }
+
+</script>
+</body>
+</html>
