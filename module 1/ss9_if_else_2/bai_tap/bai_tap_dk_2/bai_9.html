@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('enter side a'))
+    let b = parseFloat(prompt('enter side b'))
+    let c = parseFloat(prompt('enter side c'))
+
+    if (a>0 && b>0 && c>0){
+        if (a+b>c && b + c > a && a+c > b){
+            alert('this is a triangle')
+        }else {alert('this will not make a triangle')}
+    }else {alert('this will not make a triangle')}
+
+</script>
+</body>
+</html>

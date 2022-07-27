@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let wattUse = parseFloat(prompt('enter watt use (wh)'))
+
+   if (wattUse>0){
+       let more100 = (120000 + wattUse*5000)
+       wattUse -= 100
+       if (wattUse>0){
+           let more200 = (wattUse*600)
+           wattUse -=100
+           if (wattUse>0){
+               let more300 = (wattUse*800)
+               wattUse -=100
+               if (wattUse>0){
+                   let moreinf = (wattUse*1500)
+                   alert(moreinf+more100+more200+more300)
+               }else {alert(more300+more200+more100)}
+           }else {alert(more200+more100)}
+       }else {alert(more100)}
+   } else {alert('you dont consume any electric this month')}
+
+</script>
+</body>
+</html>
