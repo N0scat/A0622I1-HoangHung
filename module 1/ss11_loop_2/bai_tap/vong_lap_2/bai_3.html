@@ -6,10 +6,51 @@
 </head>
 <body>
 <script>
-    for (let i = 1; i<5; i++){
-        while (i<5){
-            
-        }
+    for (let a=1; a<=15; a++){
+        document.write('*')
+        if(a==5){document.write('<br>')}
+        else if(a==9){document.write('<br>')}
+        else if(a==12){document.write('<br>')}
+        else if(a==14){document.write('<br>')}
+    }
+
+    document.write('<br>')
+    document.write('<br>')
+    document.write('<br>')
+
+    for (let a=14; a>=0; a--){
+        document.write('*')
+        if(a==14){document.write('<br>')}
+        else if(a==12){document.write('<br>')}
+        else if(a==9){document.write('<br>')}
+        else if(a==5){document.write('<br>')}
+    }
+
+    document.write('<br>')
+    document.write('<br>')
+    document.write('<br>')
+
+    for (let a=1; a<=15; a++){
+        document.write('*')
+        if(a==5){document.write('<br>'); document.write('&nbsp ')}
+        else if(a==9){ document.write('<br>'); document.write('&nbsp &nbsp ')}
+        else if(a==12){document.write('<br>'); document.write('&nbsp &nbsp &nbsp ')}
+        else if(a==14){document.write('<br>'); document.write('&nbsp &nbsp &nbsp &nbsp ')}
+    }
+
+    document.write('<br>')
+    document.write('<br>')
+    document.write('<br>')
+
+    for (let a=14; a>0; a--){
+        if(a==14){document.write('&nbsp &nbsp &nbsp &nbsp &nbsp ');
+        document.write('*');
+        document.write('<br>');
+        document.write('&nbsp &nbsp &nbsp &nbsp ') }
+        else if(a==12){document.write('<br>'); document.write('&nbsp &nbsp &nbsp ')}
+        else if(a==9){document.write('<br>'); document.write('&nbsp &nbsp ')}
+        else if(a==5){document.write('<br>'); document.write('&nbsp ')}
+        document.write('*')
     }
 </script>
 </body>
