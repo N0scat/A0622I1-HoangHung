@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = parseInt(prompt('how much do you send?'));
+    let rate = parseFloat(prompt('interest rate'));
+    let month = parseInt(prompt('how long will you send'))
+
+    for (let i = 0; i < month; i++){
+        money+= money*rate;
+    }
+
+    alert('total money earn is: ' + money);
+</script>
+</body>
+</html>

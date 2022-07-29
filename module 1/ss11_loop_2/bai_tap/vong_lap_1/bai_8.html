@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="button" onclick="play()">press to play</button>
+<script>
+function play() {
+let minNum = +prompt('enter minimum number');
+let maxNum = +prompt('enter maximum number');
+let x = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
+let guess = +prompt('enter your guess');
+for(let i=1; i<3; i++){
+    if (guess==x){
+        alert('congratulation, you are a god at this game')
+        break;
+    }else if (guess<x){
+        alert('a little more would be good')
+        guess = +prompt('guess again you idiot')
+    }else if(guess>x){
+        alert('a little smaller would be nice')
+        guess = +prompt('guess again you stupido')
+    }
+}
+alert('you are so bad at guessing lol')
+}
+</script>
+</body>
+</html>

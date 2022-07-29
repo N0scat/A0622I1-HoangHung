@@ -6,17 +6,25 @@
 </head>
 <body>
 <script>
-    let length = +prompt('enter length')
     let width = +prompt('enter width')
+    let length = +prompt('enter length')
 
-    for (let i = 0; i<=width; i++){
+    for (let i = 0; i<width; i++){
         document.write('*')
     }
     document.write('<br>')
-    for (let i =0; i<=length; i++){
+    for (let i =0; i<=(length-3); i++){
         document.write('*')
-        for(let count = 0; count<=width; count++)
+        for(let count = 0; count<=(width-3); count++){
+            document.write('&nbsp ')
+        }
+        document.write('*')
+        document.write('<br>')
     }
+    for (let i = 0; i<width; i++){
+        document.write('*')
+    }
+
 
 </script>
 </body>
