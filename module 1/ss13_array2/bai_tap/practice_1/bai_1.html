@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = []
+    let above10 = 0
+    for (let i = 0; i <10 ; i++) {
+        let b = +prompt('enter number')
+        number.push(b)
+    }
+    for (let j = 0; j <number.length ; j++) {
+        if ((number[j]) >= 10){
+            above10++
+        }
+    }
+    alert (above10)
+</script>
+</body>
+</html>

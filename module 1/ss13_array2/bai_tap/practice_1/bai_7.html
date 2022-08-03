@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = []
+    for (let i = 0; i <10; i++) {
+        let b = +prompt('enter number')
+        number.push(b)
+    }
+    let Nemo = +prompt('enter nemo')
+    if (number.indexOf(Nemo)>=0){
+        number.splice((number.indexOf(Nemo)),1)
+        number.push(0)
+    }
+    document.write(number)
+</script>
+</body>
+</html>

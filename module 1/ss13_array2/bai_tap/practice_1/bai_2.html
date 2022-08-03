@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = []
+    let largest = 0
+    for (let i = 0; i <10 ; i++) {
+        let b = +prompt('enter number')
+        number.push(b)
+    }
+    for (let j = 0; j <number.length ; j++) {
+        if (largest<number[j]){
+            largest=number[j]
+        }
+    }
+    alert ( 'Largest number is ' + largest + ', found at index ' +number.indexOf(largest))
+</script>
+</body>
+</html>

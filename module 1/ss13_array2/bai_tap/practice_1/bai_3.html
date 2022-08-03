@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numberOfData = +prompt('enter how many number are there')
+    let number = []
+    let largest = 0
+    for (let i = 0; i <numberOfData ; i++) {
+        let b = +prompt('enter number')
+        number.push(b)
+    }
+    for (let j = 0; j <number.length ; j++) {
+        if (largest<number[j]){
+            largest=number[j]
+        }
+    }
+    let sum = 0
+    for (let a = 0; a <number.length ; a++) {
+        sum += number[a]
+    }
+
+    let average = sum/numberOfData
+
+    alert ( 'Largest number is ' + largest + ', average is ' + average)
+</script>
+</body>
+</html>

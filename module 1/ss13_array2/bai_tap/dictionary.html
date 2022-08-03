@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="wordSearch" type="text">
+<button onclick="searchWord()">search</button>
+<p id="answer"></p>
+<script>
+    let arrEng = ['one', 'two', 'three']
+    let arrVN = ['một', 'hai', 'ba']
+    function searchWord() {
+        let index = arrEng.indexOf(document.getElementById('wordSearch').value)
+        if (index<0){
+            alert('we will update this word into our dictionary later, sorry for our stupidity')
+        }else {
+            document.getElementById('answer').innerHTML = arrVN[index]
+        }
+    }
+
+
+
+
+</script>
+</body>
+</html>

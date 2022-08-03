@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numberOfData = +prompt('enter how many number are there')
+    let number = []
+    for (let i = 0; i <numberOfData ; i++) {
+        let b = +prompt('enter number')
+        number.push(b)
+    }
+
+    number.sort((a,b) => b-a)
+
+    alert(number)
+
+</script>
+</body>
+</html>
