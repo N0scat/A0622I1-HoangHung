@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt('enter a word')
+    let lowerCase = 'qwertyuiopasdfghjklzxcvbnm'
+    let upperCase = 'QWERTYUIOPASDFGHJKLZXCVBNM'
+    let result = []
+
+    for (let i = 0; i<input.length; i++){
+        if (lowerCase.indexOf(input[i])!= -1){
+            result.push(input[i].toUpperCase())
+        }
+        else if (upperCase.indexOf(input[i])!= -1){
+            result.push(input[i].toLowerCase())
+        }
+        else {
+            result.push(input[i])
+        }
+    }
+
+    document.write(result.join(''))
+</script>
+</body>
+</html>
