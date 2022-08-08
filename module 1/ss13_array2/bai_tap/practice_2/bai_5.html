@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let passage1 = prompt('enter passage one')
+    let passage2 = prompt('enter passage two')
+    let aPassage1 = passage1.split('')
+    let aPassage2 = passage2.split('')
+    let count=0
+
+    if (aPassage1.length == aPassage2.length){
+        for (let i = 0; i <aPassage1.length; i++) {
+            if (aPassage1[i]==aPassage2[i]){
+                count++
+                if (count==aPassage2.length){
+                    alert('this is the same passage')
+                }
+            }
+            else {
+                alert('passage aint the same')
+            }
+        }
+    }else {
+        alert('passage aint the same')
+    }
+</script>
+</body>
+</html>
