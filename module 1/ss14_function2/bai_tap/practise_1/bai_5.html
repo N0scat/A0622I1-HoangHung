@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let star = [ 'Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
+    let constellation = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+
+    let input = prompt('enter which star')
+    function findConst() {
+        if(constellation[star.indexOf(input)]===undefined){
+            let result= "we will look into this star more"
+            return result
+        }else{
+            let result = constellation[star.indexOf(input)]
+            return result
+        }
+
+    }
+    alert(findConst())
+</script>
+</body>
+</html>
