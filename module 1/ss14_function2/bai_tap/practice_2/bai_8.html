@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function swap() {
+let a = prompt('enter how many digit are there');
+let b = []
+        for (let i = 0; i < a ; i++) {
+            b.push(prompt('enter a number'))
+        }
+        let c = []
+        for (let j = (b.length-1); j >= 0 ; j--) {
+            c.push(b[j])
+        }
+        return c
+    }
+    alert(swap())
+</script>
+</body>
+</html>

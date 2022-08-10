@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkInt() {
+let num = +prompt('enter a number');
+if (Number.isInteger(num)){
+    if (num > 0){
+        return true
+    }else {
+        return false
+    }
+}else {
+    return false
+}
+    }
+    alert(checkInt())
+</script>
+</body>
+</html>
