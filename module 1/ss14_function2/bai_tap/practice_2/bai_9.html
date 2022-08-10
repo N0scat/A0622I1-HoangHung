@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findingNemo() {
+let a = prompt('enter a passage');
+let b = a.split("");
+let nemo = prompt('enter letter need to fine');
+let count=0
+        for (let i = 0; i <b.length ; i++) {
+            if(nemo === b[i]){
+                count++
+            }
+        }
+        if (count==0){
+            count = -1
+            return count
+        }else{
+            return count
+        }
+    }
+    alert(findingNemo())
+</script>
+</body>
+</html>
