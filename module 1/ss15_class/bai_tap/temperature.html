@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>Celsius</td>
+        <td>Fahrenheit</td>
+        <td>Kelvin</td>
+    </tr>
+    <tr>
+        <td><input type="text" id="celsius"></td>
+        <td id="F"></td>
+        <td id="K"></td>
+    </tr>
+</table>
+<button onclick="convert()">convert</button>
+<script>
+    class temperature{
+        constructor(celsius) {
+            if (celsius>=-273){
+                this.celsius = celsius
+            }else {
+                alert('that is lower than absolute zero')
+            }
+        }
+        toF(){
+            let F = this.celsius*9/5 + 32
+            return F
+        }
+        toK(){
+            let K = this.celsius - 273
+            return K
+        }
+    }
+    function convert(){
+        let temp1 = new temperature(document.getElementById('celsius').value)
+        document.getElementById('F').innerText= (temp1.toF())
+        document.getElementById('K').innerText= (temp1.toK())
+    }
+
+</script>
+</body>
+</html>
