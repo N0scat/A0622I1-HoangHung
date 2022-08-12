@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+length
+<input type="text" id="length">
+<br>
+width
+<input type="text" id="width">
+<br>
+<br>
+<button onclick="yes()">show</button>
+<br>
+<p id="para1"></p>
+<p id="para2"></p>
+<canvas id="myCanvas" width="400" height="400"></canvas>
+<br>
+<script>
+    class rectangle {
+        constructor(length, width) {
+            this.length = length;
+            this.width = width;
+        }
+        circum() {
+            let c = (2*this.width+this.length*2)
+            return c
+        }
+        area() {
+            return (this.length * this.width)
+        }
+        draw (){
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.moveTo(0,0);
+            ctx.lineTo(this.length*10,0);
+            ctx.stroke()
+            ctx.lineTo(this.length*10,this.width*10)
+            ctx.stroke()
+            ctx.lineTo(0,this.width*10)
+            ctx.stroke()
+            ctx.lineTo(0,0)
+            ctx.stroke()
+        }
+    }
+    function yes (){
+        let a = document.getElementById('length').value
+        let b = document.getElementById('width').value
+        let rectangle1 = new rectangle(a,b)
+        document.getElementById('para1').innerHTML= ('the circumference of the rectangle is ' + rectangle1.circum() + ' unit')
+        document.getElementById('para2').innerHTML= ('the area of the rectangle is ' + rectangle1.area() + ' unit<sup>2</sup>')
+        rectangle1.draw()
+    }
+
+
+
+</script>
+</body>
+</html>
